@@ -5,6 +5,10 @@
     <title>INVITATION_TEST</title>
     <script type="text/javascript">
 	function load() {
+		var url = unescape(location.href); 
+        	//파라미터만 자르고, 다시 &그분자를 잘라서 배열에 넣는다. 
+        	var paramArr = (url.substring(url.indexOf("?")+1,url.length)).split("&"); 
+		console.log(paramArr);
 		document.getElementById("usr").innerHTML="TEST_USER";
 	}
     </script>
