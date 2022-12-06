@@ -3,42 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi">
+    <meta name="generator" content="Jekyll v4.1.1">
     <meta property="og:url" content="https://jisang-ha.github.io/invitation">
     <meta property="og:title" content="모바일 청첩장 테스트">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://jisang-ha.github.io/invitation/images/thumbnail/thumbnail_test.jpg">
+    <meta property="og:image" content="https://jisangha.github.io/invitation/images/thumbnail/thumbnail_test.jpg">
+    <meta property="og:image:width" content="552" />
+    <meta property="og:image:height" content="800" />
     <meta property="og:description" content="아름다운 날 저희의 결혼식에 초대합니다.">
+    <meta name="format-detection" content="telephone=no" />
     <title>INVITATION_TEST</title>
     <script type="text/javascript">
-	function load() {
-		var usrId = getParam("usr_id") ? getParam("usr_id") + "님" : "당신";
-		document.getElementById("usr").innerHTML = usrId + "을 초대합니다.";
-	}
-	    
-	function getParam(sname) {
-	var decodeStr = decodeURI(location.search);
-   	 var params = decodeStr.substr(location.search.indexOf("?") + 1);
+        function load() {
+            var usrNm = getParam("usr_nm") ? getParam("usr_nm") + "님" : "당신";
+            document.getElementById("usr").innerHTML = usrNm + "을 초대합니다.";
+        }
 
-    	var sval = "";
+        function getParam(usrNm) {
+            var decodeStr = decodeURI(location.search);
+            var params = decodeStr.substr(location.search.indexOf("?") + 1);
 
-    	params = params.split("&");
+            var returnNm = "";
+            params = params.split("&");
 
-    	for (var i = 0; i < params.length; i++) {
+            for (var i = 0; i < params.length; i++) {
+                temp = params[i].split("=");
 
-      	  temp = params[i].split("=");
+                if ([temp[0]] == usrNm) {
+                    returnNm = temp[1];
+                }
+            }
+            return returnNm;
 
-       	 if ([temp[0]] == sname) { sval = temp[1]; }
-	
-   	 }
-
-    	return sval;
-
-	}
+        }
     </script>
   </head>
   <body onload="load()">
     <p>Hello World</p>
     <p id="usr"></p>
-    <button onclick="location.href='wedInvt.html'">HOME</button>
+    <button onclick="location.href='main.html'">HOME</button>
   </body>
 </html>
