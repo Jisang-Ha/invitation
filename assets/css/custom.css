@@ -301,6 +301,15 @@ header {
   color: #FF99CC;
 }
 
+.section4-sec4 {
+  font-family: NanumMyeongjo-b;
+  line-height: 1.5em;
+  font-size: 1.35rem;
+  background: none;
+  border: none;
+  color: #55CCCC;
+}
+
 .section5 {
   background-color: #f9f9f9b7;
 }
