@@ -55,7 +55,7 @@
         wow.init();
 
         $(document).ready(function() {
-            let date = new Date(2023, 09, 02);
+            let date = new Date("2023-09-02");
             let currentDate = new Date();
 
             let result = date - currentDate;
@@ -115,6 +115,20 @@
             </div>
             <br/><br/><br/><br/>
         </div>
+
+        <hr class="cover-container"/>
+        <br/>
+        <p class="wow fadeInUp section2-title section2-main inner cover cover-container d-flex w-100 h-100 p-5 mx-auto flex-column">
+            받으신 모든 분에게
+        </p>
+        <p class="wow fadeInUp section2-title section2-sub inner cover cover-container d-flex w-100 h-100 p-2 mx-auto flex-column">
+            테스트 화면입니다.<br/>
+            테스트 화면입니다.<br/>
+            테스트 화면입니다.<br/>
+            테스트 화면입니다.<br/>
+            테스트 화면입니다.<br/>
+            테스트 화면입니다.
+        </p>
 
         <br/><br/><br/><br/>
         <div class="section3 inner cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
@@ -438,7 +452,7 @@
                 var mapContainer = document.getElementById('map'), // 지도를 표시할 div
                     mapOption = {
                         center: new naver.maps.LatLng(37.52225622212999, 127.03913780021881), // 지도의 중심좌표
-                        level: 3 // 지도의 확대 레벨
+                        level: 5 // 지도의 확대 레벨
                     };
 
                 var map = new naver.maps.Map(mapContainer, mapOption);
@@ -521,6 +535,17 @@
             </div>
             <br/><br/>
             <br/><br/>
+        </div>
+
+        <div class="wow fadeInUp section7 inner cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+            <button type="button" class="wow fadeInUp btn section7-button" onclick="onCopytoAccount('1234567890')">
+                카카오톡 공유하기
+            </button>
+        
+            <button type="button" class="wow fadeInUp btn section7-button" onclick="onCopytoAccount('https://jisangha.github.io/invitation')">
+                링크 복사하기
+            </button>
+            
         </div>
 
 
