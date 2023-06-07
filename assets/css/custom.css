@@ -289,7 +289,7 @@ header {
   font-size: 1.35rem;
   background: none;
   border: none;
-  color: #627979;
+  color: #4c8ec4;
 }
 
 .section4-sec3-g {
@@ -298,7 +298,7 @@ header {
   font-size: 1.35rem;
   background: none;
   border: none;
-  color: #627979;
+  color: #ad4da5;
 }
 
 .section4-sec4 {
@@ -346,12 +346,12 @@ header {
 }
 
 .section5-table tr .sun{
-  color: red;
+  color: rgb(13, 153, 60);
 }
 
 .section5-table tr .check{
   color: white;
-  background-color: rgba(28, 209, 82, 0.74);
+  background-color: rgba(19, 134, 53, 0.637);
   border-radius: 50px;
 }
 
@@ -361,6 +361,11 @@ header {
 
 .section5-table tr:last-child td{
   padding-bottom: 2em;
+}
+
+.section5-sub span{
+  color: rgba(19, 134, 53, 0.637);
+  font-weight: bold;
 }
 
 .section6-title {
@@ -460,6 +465,68 @@ header {
 .section8 {
   background-color: #f9f9f9;
 }
+
+.section9-title {
+  margin-top: 1em;
+  color: #333;
+  text-shadow: none;
+}
+
+.section9-main {
+  font-family: NanumMyeongjo-b;
+  line-height: 1em;
+  font-size: 1.2em;
+}
+
+.section9-location-main {
+  font-family: NanumMyeongjo-e;
+  line-height: 1.5em;
+  font-size: 1rem;
+}
+
+.section9-sub {
+  font-family: NanumMyeongjo-r;
+  line-height: 1.5em;
+  font-size: 1rem;
+}
+
+.section9-location-sub {
+  font-family: NanumMyeongjo-r;
+  line-height: 1.5em;
+  font-size: 1rem;
+  text-align: left;
+  color: black;
+}
+
+.section9-btn1 {
+  line-height: 1.5em;
+  background: none;
+  border: none;
+  float : right;
+}
+
+.section10-div {
+  width:100%;
+  text-align: center;
+}
+
+.section10-btn1{
+  display :inline-block;
+  width : 50%;
+  border: none;
+  background-color: #3b3d3c;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.section10-btn1:hover{
+  background-color: #0d0e0d;
+  color: white;
+}
+
 
 /*
  * Cover
