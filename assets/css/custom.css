@@ -4,15 +4,15 @@
 
 @font-face {
   font-family: 'NanumMyeongjo-r';
-  src: url('../font/NanumMyeongjo-Regular.ttf') format('truetype');
+  src: url('../font/DX명조20.ttf') format('truetype');
 }
 @font-face {
   font-family: 'NanumMyeongjo-e';
-  src: url('../font/NanumMyeongjo-ExtraBold.ttf') format('truetype');
+  src: url('../font/DX명조40.ttf') format('truetype');
 }
 @font-face {
   font-family: 'NanumMyeongjo-b';
-  src: url('../font/NanumMyeongjo-Bold.ttf') format('truetype');
+  src: url('../font/DX명조30.ttf') format('truetype');
 }
 @font-face {
   font-family: 'DancingScript-b';
@@ -545,4 +545,17 @@ header {
  */
 .mastfoot {
   color: rgba(255, 255, 255, .5);
+}
+
+.notification-container {
+  background: rgba(0,0,0,.3);
+  border-radius: 10px;
+  padding: 15px 20px;
+  position: absolute;
+  bottom: 50px;
+  display: none;
+}
+
+.notification-container.show {
+  display: block;
 }
