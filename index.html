@@ -66,6 +66,16 @@
 
             $("#wed_day").html(result);
         });
+
+        $(document).ready(function() {
+            let param = new URLSearchParams(location.search);
+            let usrNm = param.get('usr_nm') == null ? '여러분을' : param.get('usr_nm') + '님을';
+
+            let usrText = usrNm + ' 초대합니다.';
+            $("#usr_nm").html(usrText);
+        });
+
+
     </script>
 </head>
 <body class="text-center">
@@ -124,7 +134,7 @@
             함께 해주시면,<br/>
             더없이 즐겁게 살아가겠습니다.<br/>
             즐거운 혼인서약의 자리에<br/>
-             님을 초대합니다.
+            <span id="usr_nm"></span>
         </p>
 
         <br/><br/><br/><br/>
@@ -610,7 +620,7 @@
     
                             <div id="lastCollapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#lastAccordionExample">
                                 <div class="card-body section9-location-sub">
-                                    [신랑] 하지상 :
+                                    하지상 :
                                     기업은행 1234567890
                                     <button onclick="onCopytoAccount('1234567890')" class="section9-btn1">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-files" viewBox="0 0 16 16">
@@ -646,7 +656,7 @@
                             </div>
                             <div id="lastCollapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#lastAccordionExample">
                                 <div class="card-body section9-location-sub">
-                                    [신부] 진소정 :
+                                    진소정 :
                                     기업은행 1234567890
                                     <button onclick="document.location.href='sms:010-9664-2230'" class="section9-btn1">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-files" viewBox="0 0 16 16">
@@ -698,7 +708,7 @@
 
 
         <footer class="pt-5 text-muted text-center text-small section8">
-            <p class="mb-1">© 2023-09-02, jisang sojung</p>
+            <p class="mb-1">© 2023-09-02, JISANG SOJUNG</p>
             <br/>
         </footer>
     </main>
