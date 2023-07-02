@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi">
+    <meta name="generator" content="Jekyll v4.1.1">
+    <meta property="og:url" content="https://jisangha.github.io/invitation">
+    <meta property="og:title" content="모바일 청첩장 테스트">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://jisangha.github.io/invitation/assets/images/thumbnail/thumbnail_test.jpg">
+    <meta property="og:image:width" content="552" />
+    <meta property="og:image:height" content="800" />
+    <meta property="og:description" content="아름다운 날 저희의 결혼식에 초대합니다.">
+    <meta name="format-detection" content="telephone=no" />
+    <title>모바일 청첩장 테스트</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> -->
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="assets/css/custom.css" rel="stylesheet">
+    <link href="assets/css/animate.css" rel="stylesheet">
+    <script
+            src="https://code.jquery.com/jquery-3.5.1.min.js"
+            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+            crossorigin="anonymous"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script>
+        var wow = new WOW(
+            {
+                boxClass:     'wow',      // animated element css class (default is wow)
+                animateClass: 'animated', // animation css class (default is animated)
+                offset:       80,          // distance to the element when triggering the animation (default is 0)
+                mobile:       true,       // trigger animations on mobile devices (default is true)
+                live:         true,       // act on asynchronously loaded content (default is true)
+                scrollContainer: null,    // optional scroll container selector, otherwise use window,
+                resetAnimation: true,     // reset animation on end (default is true)
+            }
+        );
+        wow.init();
+
+        $(document).ready(function() {
+            let date = new Date("2023-09-02");
+            let currentDate = new Date();
+
+            let result = date - currentDate;
+            let misec = 24 * 60 * 60 * 1000;
+
+            result = (result <= 0)? 0 : (parseInt(result / misec) + 1);
+
+            $("#wed_day").html(result);
+        });
+
+        const param = new URLSearchParams(location.search);
+        $("#usr_nm").html(param.get('usr_nm'));
+    </script>
+</head>
+<body class="text-center">
+<div class="top-div">
+    <header class="inner cover cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <!-- <h1 class="wow fadeIn cover-heading" style="text-align: right; margin-top: 0.5em; margin-right: 0.5em; font-size: 2rem;">
+            <span style="letter-spacing : -0.13em; margin-right: 0.1em">⎽⎽</span><br/>
+            09 <br/>
+            월 <br/>
+            02 <br/>
+            일 <br/>
+            <span style="letter-spacing : -0.13em; margin-right: 0.1em;">⎺⎺</span>
+        </h1>-->
+    </header>
+    <main role="main" class="inner">
+        <div class="wow fadeInUp">
+            <p class="top-title">진소정 · 하지상</p>
+            <p class="top-title-sub">9월 2일 토요일 오후 2시</p>
+            <p class="top-title-sub">더채플앳청담 3층 커티지홀</p>
+            <br/><br/><br/>
+            <hr class="cover-container"/>
+            <br/>
+        </div>
+
+        <div class="wow fadeInUp">
+            <p class="section1-title section1-main">
+                You make me <br/>
+                want to be a better man<br/>
+                당신은 나를 더 좋은 사람이<br/>
+                되고 싶게 만들어요
+                <br/>
+                - 영화, 이보다 더 좋을 순 없다 中 -
+            </p>
+            <br/>
+        </div>
+
+        <div class="wow fadeInUp">
+            <div class="section1-title section1-sub2">
+                하은준 · 박모란<span class="small">의&nbsp아들&nbsp&nbsp</span>하지상<br/>
+                진형우 · 임병희<span class="small">의&nbsp&nbsp&nbsp딸&nbsp&nbsp&nbsp</span>진소정
+            </div>
+            <br/><br/><br/><br/>
+        </div>
+
+        <hr class="cover-container"/>
+        <br/>
+        <p class="wow fadeInUp section2-title section2-main inner cover cover-container d-flex w-100 h-100 p-5 mx-auto flex-column">
+            초대합니다
+        </p>
+        <p class="wow fadeInUp section2-title section2-sub inner cover cover-container d-flex w-100 h-100 p-2 mx-auto flex-column">
+            함께 있는 시간이<br/>
+            너무 재밌고 즐거워서,<br/>
+            영원히 함께하기로<br/>
+            약속하였습니다.<br/>
+            시작을 약속하는 자리에<br/>
+            함께 해주시면,<br/>
+            더없이 즐겁게 살아가겠습니다.<br/>
+            즐거운 혼인서약의 자리에<br/>
+            <span id="usr_nm"></span>을 초대합니다.
+        </p>
+
+       
+
+
+        <footer class="pt-5 text-muted text-center text-small section8">
+            <p class="mb-1">© 2023-09-02, jisang sojung</p>
+            <br/>
+        </footer>
+    </main>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+<script>
+    function onCopytoAccount(val) {
+        var t = document.createElement("textarea");
+        t.value = val;
+        document.body.appendChild(t);
+        t.select();
+        t.setSelectionRange(0, 9999); 
+        document.execCommand('copy');
+        document.body.removeChild(t);
+
+        showAlertAndClose();
+    }
+
+    function showAlertAndClose() {
+        var notification = document.getElementById('notification-container');
+        notification.classList.add('show');
+        setTimeout(function() {
+            notification.classList.remove('show')
+        }, 2000);
+    }
+
+    function onGotoKaKao() {
+        Kakao.init('b4a6c2dbfb8fab34e1a98dc71d31d07c');
+        Kakao.Link.sendDefault({
+            objectType: "feed",
+            content: {
+                title: "청첩장 테스트 제목",
+                description: "청첩장 테스트 설명",
+                imageUrl: "https://jisangha.github.io/invitation/assets/images/thumbnail/thumbnail_test.jpg",
+                link: {
+                    mobileWebUrl: "https://jisangha.github.io/invitation",
+                    webUrl: "https://jisangha.github.io/invitation",
+                },
+            },
+            buttons: [
+                {
+                    title: "웹으로 보기",
+                    link: {
+                        mobileWebUrl: "https://jisangha.github.io/invitation",
+                        webUrl: "https://jisangha.github.io/invitation",
+                    },
+                },
+            ],
+            installTalk: true
+        });
+
+    }
+
+</script>
+
+</body>
+
+</html>
