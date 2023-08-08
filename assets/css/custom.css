@@ -162,6 +162,12 @@ header {
   background-position: center;
 }
 
+header2 {
+  background-image: url("../images/gallery/gal_pic_01.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
 @media (min-width: 48em) {
   .masthead-brand {
     float: left;

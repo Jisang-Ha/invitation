@@ -11,7 +11,7 @@
     <meta property="og:image" content="https://jisangha.github.io/invitation/assets/images/thumbnail/thumbnail.jpg">
     <meta property="og:image:width" content="552" />
     <meta property="og:image:height" content="800" />
-    <meta property="og:description" content="아름다운 날 저희의 결혼식에 초대합니다.">
+    <meta property="og:description" content="진심으로 감사드립니다">
     <meta name="format-detection" content="telephone=no" />
     <title>모바일 청첩장 테스트</title>
     <!-- Bootstrap core CSS -->
@@ -55,17 +55,6 @@
         );
         wow.init();
 
-        $(document).ready(function() {
-            let date = new Date("2023-09-02");
-            let currentDate = new Date();
-
-            let result = date - currentDate;
-            let misec = 24 * 60 * 60 * 1000;
-
-            result = (result <= 0)? 0 : (parseInt(result / misec) + 1);
-
-            $("#wed_day").html(result);
-        });
 
         const param = new URLSearchParams(location.search);
         $("#usr_nm").html(param.get('usr_nm'));
@@ -73,7 +62,7 @@
 </head>
 <body class="text-center">
 <div class="top-div">
-    <header class="inner cover cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header2 class="inner cover cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
         <!-- <h1 class="wow fadeIn cover-heading" style="text-align: right; margin-top: 0.5em; margin-right: 0.5em; font-size: 2rem;">
             <span style="letter-spacing : -0.13em; margin-right: 0.1em">⎽⎽</span><br/>
             09 <br/>
@@ -82,7 +71,7 @@
             일 <br/>
             <span style="letter-spacing : -0.13em; margin-right: 0.1em;">⎺⎺</span>
         </h1>-->
-    </header>
+    </header2>
     <main role="main" class="inner">
         <!-- <div class="wow fadeInUp">
             <p class="top-title">진소정 · 하지상</p>
@@ -109,7 +98,7 @@
 
 
         <footer class="pt-5 text-muted text-center text-small section8">
-            <p class="mb-1">© 2023-09-02, jisang sojung</p>
+            <p class="mb-1">© 2023-09-02, JISANG SOJUNG</p>
             <br/>
         </footer>
     </main>
